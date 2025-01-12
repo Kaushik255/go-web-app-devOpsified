@@ -79,7 +79,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        token: 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
+        token: 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
 
     - name: Update tag in Helm chart
       run: |
@@ -88,7 +88,7 @@ jobs:
     - name: Commit and push changes
       run: |
         git config --global user.email "kaushikdenge255@gmail.com"
-        git config --global user.name "Kaushik@255"
+        git config --global user.name "Kaushik Denge"
         git add helm/go-web-app-chart/values.yaml
         git commit -m "Update tag in Helm chart"
         git push
